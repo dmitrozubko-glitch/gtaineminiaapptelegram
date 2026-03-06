@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>JuniperBot Clone</title>
+    <style>
+        :root {
+            --bg: #0f0f12;
+            --card-bg: #1a1a20;
+            --accent: #7289da; /* Колір Discord */
+            --text: #ffffff;
+        }
+
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; }
+
+        /* Шапка */
+        header { padding: 2rem; text-align: center; background: linear-gradient(to bottom, #16161d, var(--bg)); }
+        h1 { font-size: 3rem; margin: 0; color: var(--accent); }
+
+        /* Сітка можливостей */
+        .features { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 20px; 
+            padding: 50px; 
+            max-width: 1200px; 
+            margin: auto; 
+        }
+
+        .card { 
+            background: var(--card-bg); 
+            padding: 30px; 
+            border-radius: 15px; 
+            transition: 0.3s; 
+            border: 1px solid #333;
+        }
+
+        .card:hover { transform: translateY(-10px); border-color: var(--accent); }
+
+        .btn { 
+            display: inline-block; 
+            padding: 15px 30px; 
+            background: var(--accent); 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>JuniperBot</h1>
+        <p>Найкращий помічник для вашого Discord сервера</p>
+        <a href="#" class="btn">Додати на сервер</a>
+    </header>
+
+    <div class="features">
+        <div class="card">
+            <h3>Модерація</h3>
+            <p>Тримайте сервер у безпеці за допомогою просунутої системи банів, мутів та авто-модерації.</p>
+        </div>
+        <div class="card">
+            <h3>Музика</h3>
+            <p>Слухайте улюблені треки разом з друзями через інтегровані музичні сервіси.</p>
+        </div>
+        <div class="card">
+            <h3>Рейтинги</h3>
+            <p>Мотивуйте спільноту за допомогою системи рівнів та нагород за активність.</p>
+        </div>
+    </div>
+
+</body>
+</html>
